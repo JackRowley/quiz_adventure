@@ -109,23 +109,23 @@ def room4():
     print("A:Do you wish to follow the path on the map")
     print("B:Do you continue looking")
     path=input(":")
-    if path.upper== ("A"):
+    if path.upper()== ("A"):
         print("You fall strraight through the lava")
         print("You end up in a pitch black room")
         print("There is a door infront of you")
         print("A:Do you go through it?")
         print("B:Look around the room")
         action=input(":")
-        if action.upper=="A":
+        if action.upper()=="A":
             print("You proceed to the final room......")
             bossroom()
-        elif action.upper=="B":
+        elif action.upper()=="B":
             print("You fall straight into the void")
             print("You fall forever and do not stop")
             print("GAME OVER")
             quit()
 
-    elif path.upper=="B":
+    elif path.upper()=="B":
         print("You look at the other side of the rom and find some magc powder")
         print("You throw ther magic powder over the lava and a path appears")
         print("You walk over the magic powder in to the final room...")
@@ -145,22 +145,22 @@ def bossroom():
     print("A:Do you fight it?")
     print("B:Leave it oalone adn walk away")
     fight=input(":")
-    if fight.upper=="A":
-        print("You engage in a battle with the dragon")
+    if fight.upper()=="A":
+        print("You engage in a battle with the dog")
         print("First move:")
-        print("A:Do you attack the dragon>")
-        print("B:Or evade the dragon")
+        print("A:Do you attack the dog>")
+        print("B:Or evade the dog")
         fight=input(":")
-        if fight.upper=="A":
-            print("The dragon doesnt decide to attack giving you the chance to deal damage")
-            print("You swing your sword sword at the dragons chest causing him to loose health")
+        if fight.upper()=="A":
+            print("The dog doesnt decide to attack giving you the chance to deal damage")
+            print("You swing your sword sword at the dogs chest causing him to loose health")
             dragon_health - attack
-            print("Dragon:", dragon_health)
+            print("Dog:", dragon_health)
             print("You:", health)
             bossroom2()
             
-    elif fight.upper=="B":
-        print("You roll out of the dragons swipe giving you chance to attack")
+    elif fight.upper()=="B":
+        print("You roll out of the dogs swipe giving you chance to attack")
         bossroom2()
 
 def bossroom2():
@@ -169,23 +169,26 @@ def bossroom2():
      global attack
      global health
      fight=input(":")
-     if fight.upper=="A":
-         print("You engage in a battle with the dragon")
-          print("First move:")
-         print("A:Do you attack the dragon>")
-        print("B:Or evade the dragon")
-        fight=input(":")
-        if fight.upper=="A":
-            print("The dragon doesnt decide to attack giving you the chance to deal damage")
-            print("You swing your sword sword at the dragons chest causing him to loose health")
-            dragon_health - attack
-            print("Dragon:", dragon_health)
-            print("You:", health)
-            bossroom2()
+     if fight.upper()=="A":
+         print("You engage in a battle with the dog")
+         print("First move:")
+         print("A:Do you attack the dog>")
+         print("B:Or evade the dog")
+         fight=input(":")
+         if fight.upper()=="A":
+             print("The dog doesnt decide to attack giving you the chance to deal damage")
+             print("You swing your sword sword at the dragons chest causing him to loose health")
+             dragon_health - attack
+             print("Dog:", dragon_health)
+             print("You:", health)
+             bossroom2()
             
-    elif fight.upper=="B":
-        print("You roll out of the dragons swipe giving you chance to attack")
-        bossroom2()
+     elif fight.upper()=="B":
+         print("You roll out of the dogs swipe giving you chance to attack")
+         bossroom3()
+def bossroom3():
+    print("You attack the dragons heart causing it to die")
+    print("YOU LOSE!!")
         
         
         
